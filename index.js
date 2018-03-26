@@ -8,13 +8,24 @@ var options = {
 };
 ////////////////////
 
-var crawl = require('crawl');
+/// Old crawl lib ///
+// var crawl = require('crawl');
+//
+// crawl.crawl("https://paulevans.org", function(err, pages) {
+// 	if (err) {
+// 		console.error("An error occured", err);
+// 		return;
+// 	}
+//
+// 	console.log(prettyjson.render(pages));
+// });
+/////////////////////
 
-crawl.crawl("http://titan.dcs.bbk.ac.uk/~kikpef01/testpage.html", function(err, pages) {
-	if (err) {
-		console.error("An error occured", err);
-		return;
-	}
+/// New js-crawler lib ///
+var Crawler = require("js-crawler");
 
-	console.log(prettyjson.render(pages));
-});
+new Crawler().configure({depth: 3})
+  .crawl("http://paulevans.org", function onSuccess(page) {
+    console.log(page.url);
+  });
+//////////////////////////
