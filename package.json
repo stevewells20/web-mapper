@@ -1,0 +1,31 @@
+{
+  "name": "web-mapper",
+  "version": "1.0.0",
+  "description": "Builds graphical map (hopefully editable) of a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Wells",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "crawl": "^0.3.1",
+    "crawler": "^1.1.2",
+    "d3": "^5.0.0",
+    "prettyjson": "^1.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevewells20/web-mapper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "d3",
+    "network"
+  ],
+  "bugs": {
+    "url": "https://github.com/stevewells20/web-mapper/issues"
+  },
+  "homepage": "https://github.com/stevewells20/web-mapper#readme"
+}
